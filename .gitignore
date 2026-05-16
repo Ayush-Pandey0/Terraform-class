@@ -6,4 +6,3 @@ crash.*.log
 terraform.tfvars
 *.tfvars
 *.tfvars.json
-.generated-message.txt

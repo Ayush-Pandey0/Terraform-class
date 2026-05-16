@@ -7,7 +7,14 @@ terraform {
   }
 }
 
-resource "local_file" "example" {
-  filename = "${path.module}/generated-message.txt"
-  content  = var.message
+module "intro" {
+  source   = "./modules/file-writer"
+  content  = var.intro_content
+  filename = var.intro_filename
+}
+
+module "summary" {
+  source   = "./modules/file-writer"
+  content  = var.summary_content
+  filename = var.summary_filename
 }

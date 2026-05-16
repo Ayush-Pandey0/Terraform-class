@@ -1,6 +1,6 @@
-# Terraform Starter
+# Terraform Module Project
 
-This workspace contains a minimal Terraform example that writes a local file.
+This workspace contains a small Terraform module example that writes two local files.
 
 ## Usage
 
@@ -11,7 +11,7 @@ terraform validate
 terraform apply
 ```
 
-The example creates `generated-message.txt` in this folder using the `local_file` resource.
+The example creates `project-intro.txt` and `project-summary.txt` in this folder using a reusable module.
 
 ## Push to GitHub
 
@@ -21,10 +21,8 @@ The example creates `generated-message.txt` in this folder using the `local_file
 ```powershell
 git init
 git add .
-git commit -m "Initial Terraform setup"
+git commit -m "Initial Terraform module setup"
 git branch -M main
 git remote add origin <your-github-repo-url>
 git push -u origin main
 ```
-
-# Terraform-class

@@ -26,3 +26,5 @@ git branch -M main
 git remote add origin <your-github-repo-url>
 git push -u origin main
 ```
+
+# Terraform-class
